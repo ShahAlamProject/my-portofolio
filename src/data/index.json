@@ -1,0 +1,89 @@
+{
+  "skills": [
+    {
+      "id": "1",
+      "src": "./img/product-chain-1.png",
+      "title": "Front-End",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+    },
+    {
+      "id": "2",
+      "src": "./img/tag-1.png",
+      "title": "Back-End",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+    },
+    {
+      "id": "3",
+      "src": "./img/feather-pen-2.png",
+      "title": "UI & UX Design",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+    },
+    {
+      "id": "4",
+      "src": "./img/feather-pen-1.png",
+      "title": "Webflow Development",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+    }
+  ],
+  "portfolio": [
+    {
+      "id": "1",
+      "src": "./img/placeholder-image.png",
+      "title": "Ahuse",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "link": "View In Github",
+      "article": "Ahuse adalah platform properti modern yang memudahkan pengguna dalam mencari, menyewa, dan membeli hunian secara online. Dibangun dengan React dan Node.js, platform ini menghadirkan pengalaman pencarian yang cepat dan intuitif.\n\nFitur utama meliputi pencarian berbasis lokasi, filter harga dan fasilitas, serta sistem notifikasi real-time. UI/UX dirancang dengan pendekatan mobile-first untuk memastikan aksesibilitas di semua perangkat.",
+      "tech": ["React", "Node.js", "MongoDB", "Tailwind CSS"],
+      "github": "https://github.com/",
+      "website": "https://example.com/"
+    },
+    {
+      "id": "2",
+      "src": "./img/placeholder-image-1.png",
+      "title": "App Dashboard",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "link": "View In Github",
+      "article": "App Dashboard adalah solusi visualisasi data komprehensif untuk kebutuhan bisnis. Dashboard ini menampilkan data analytics secara real-time dengan grafik interaktif dan laporan yang dapat dikustomisasi.\n\nDibangun menggunakan React dan D3.js, aplikasi ini mendukung integrasi dengan berbagai sumber data. Fitur unggulan termasuk dark/light mode, export laporan PDF, dan manajemen pengguna multi-role.",
+      "tech": ["React", "D3.js", "PostgreSQL", "Express"],
+      "github": "https://github.com/",
+      "website": "https://example.com/"
+    },
+    {
+      "id": "3",
+      "src": "./img/placeholder-image-2.png",
+      "title": "Easy Rentn",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "link": "View In Github",
+      "article": "Easy Rentn adalah aplikasi manajemen penyewaan kendaraan yang menghubungkan pemilik kendaraan dengan penyewa secara langsung. Sistem pembayaran terintegrasi dan verifikasi identitas digital menjadi keunggulan utama platform ini.\n\nAplikasi dibangun dengan Flutter untuk mobile dan React untuk web. Fitur unggulan mencakup tracking lokasi real-time, sistem rating dua arah, serta notifikasi otomatis untuk pengingat jatuh tempo sewa.",
+      "tech": ["Flutter", "React", "Firebase", "Stripe"],
+      "github": "https://github.com/",
+      "website": "https://example.com/"
+    }
+  ],
+  "testimonial": [
+    {
+      "id": "1",
+      "count": "5",
+      "src": "./img/avatar-image.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "author_name": "Dianne Russel",
+      "author_designation": "Starbucks"
+    },
+    {
+      "id": "2",
+      "count": "5",
+      "src": "./img/avatar-image-1.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "author_name": "Kristin Watson",
+      "author_designation": "Louis Vuitton"
+    },
+    {
+      "id": "3",
+      "count": "5",
+      "src": "./img/avatar-image-2.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "author_name": "Kathryn Murphy",
+      "author_designation": "McDonald's"
+    }
+  ]
+}
