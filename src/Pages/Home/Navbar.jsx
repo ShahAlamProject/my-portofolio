@@ -28,7 +28,10 @@ const FlagImage = ({ src, label }) =>
 function Navbar({ isDark, toggleTheme }) {
   const [navActive, setNavActive] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState(null);
   const langRef = useRef(null);
+  const navListRef = useRef(null);
+  const navItemRefs = useRef([]);
   const { lang, setLang, t, translations } = useLang();
 
   const navItems = [
@@ -81,6 +84,7 @@ function Navbar({ isDark, toggleTheme }) {
 
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
+      <div className="navbar__shimmer" aria-hidden="true" />
       <div className="navbar__brand">
         <div className="navbar__logo-shell">
           <img src="./img/logo.svg" alt="Logoipsum" />
@@ -116,56 +120,58 @@ function Navbar({ isDark, toggleTheme }) {
           ))}
         </ul>
       </div>
-      <div className="navbar--controls">
-        <div className="lang-switcher" ref={langRef}>
-        <button
-          type="button"
-          className="lang-switcher__btn"
-          onClick={() => setLangOpen((prev) => !prev)}
-          aria-label="Switch language"
-        >
-          <FlagImage src={t.flag} label={t.label} />
-          <span className="lang-switcher__label">{t.label}</span>
-          <svg className={`lang-switcher__arrow ${langOpen ? "open" : ""}`} width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-            <polyline points="6 9 12 15 18 9"/>
-          </svg>
-        </button>
-        {langOpen && (
-          <ul className="lang-switcher__dropdown">
-            {Object.values(translations).map((item) => (
-              <li key={item.code}>
-                <button
-                  type="button"
-                  className={`lang-switcher__option ${lang === item.code ? "active" : ""}`}
-                  onClick={() => { setLang(item.code); setLangOpen(false); }}
-                >
-                  <FlagImage src={item.flag} label={item.label} />
-                  <span>{item.label}</span>
-                </button>
-              </li>
-            ))}
-          </ul>
-        )}
+      <div className="navbar__right">
+        <div className="navbar--controls">
+          <div className="lang-switcher" ref={langRef}>
+            <button
+              type="button"
+              className="lang-switcher__btn"
+              onClick={() => setLangOpen((prev) => !prev)}
+              aria-label="Switch language"
+            >
+              <FlagImage src={t.flag} label={t.label} />
+              <span className="lang-switcher__label">{t.label}</span>
+              <svg className={`lang-switcher__arrow ${langOpen ? "open" : ""}`} width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            {langOpen && (
+              <ul className="lang-switcher__dropdown">
+                {Object.values(translations).map((item) => (
+                  <li key={item.code}>
+                    <button
+                      type="button"
+                      className={`lang-switcher__option ${lang === item.code ? "active" : ""}`}
+                      onClick={() => { setLang(item.code); setLangOpen(false); }}
+                    >
+                      <FlagImage src={item.flag} label={item.label} />
+                      <span>{item.label}</span>
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+          <button
+            type="button"
+            className="theme-toggle"
+            onClick={toggleTheme}
+            aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
+          >
+            {isDark ? <SunIcon /> : <MoonIcon />}
+          </button>
         </div>
         <button
           type="button"
-          className="theme-toggle"
-          onClick={toggleTheme}
-          aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
+          className={`nav__hamburger ${navActive ? "active" : ""}`}
+          onClick={toggleNav}
+          aria-label="Toggle navigation"
         >
-          {isDark ? <SunIcon /> : <MoonIcon />}
+          <span className="nav__hamburger__line"></span>
+          <span className="nav__hamburger__line"></span>
+          <span className="nav__hamburger__line"></span>
         </button>
       </div>
-      <button
-        type="button"
-        className={`nav__hamburger ${navActive ? "active" : ""}`}
-        onClick={toggleNav}
-        aria-label="Toggle navigation"
-      >
-        <span className="nav__hamburger__line"></span>
-        <span className="nav__hamburger__line"></span>
-        <span className="nav__hamburger__line"></span>
-      </button>
     </nav>
   );
 }
