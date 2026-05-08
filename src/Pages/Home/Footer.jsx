@@ -4,6 +4,8 @@ import { useLang } from "../../LangContext";
 
 function Footer() {
   const { t } = useLang();
+  const currentYear = new Date().getFullYear();
+  const copyrightText = t.footer.copyright.replace(/\b20\d{2}\b/, String(currentYear));
   return (
     <footer className="footer--container">
       <div className="footer--link--container">
@@ -49,6 +51,19 @@ function Footer() {
                 className="text-md"
               >
                 {t.nav.about}
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="navbar--active-content"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                to="Experience"
+                className="text-md"
+              >
+                {t.experience.label}
               </Link>
             </li>
           </ul>
@@ -120,7 +135,7 @@ function Footer() {
       </div>
       <hr className="divider" />
       <div className="footer--content--container">
-        <p className="text-sm">{t.footer.copyright}</p>
+        <p className="text-sm">{copyrightText}</p>
         <div className="footer--social--icon">
           <ul>
             <li>

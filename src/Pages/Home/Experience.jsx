@@ -1,11 +1,58 @@
+import { useEffect, useRef, useState } from "react";
 import { useLang } from "../../LangContext";
 
 export default function Experience() {
   const { t } = useLang();
+  const sectionRef = useRef(null);
+  const [isInView, setIsInView] = useState(false);
   const items = t.experience.items || [];
 
+  useEffect(() => {
+    const sectionEl = sectionRef.current;
+    if (!sectionEl) {
+      return undefined;
+    }
+
+    const itemElements = Array.from(
+      sectionEl.querySelectorAll(".experience--timeline--item")
+    );
+
+    const sectionObserver = new IntersectionObserver(
+      ([entry]) => {
+        setIsInView(entry.isIntersecting);
+      },
+      { threshold: 0.22 }
+    );
+
+    const itemObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+          }
+        });
+      },
+      {
+        threshold: 0.24,
+        rootMargin: "0px 0px -12% 0px",
+      }
+    );
+
+    sectionObserver.observe(sectionEl);
+    itemElements.forEach((itemEl) => itemObserver.observe(itemEl));
+
+    return () => {
+      sectionObserver.disconnect();
+      itemObserver.disconnect();
+    };
+  }, [items]);
+
   return (
-    <section id="Experience" className="experience--section">
+    <section
+      id="Experience"
+      className={`experience--section ${isInView ? "is-inview" : ""}`}
+      ref={sectionRef}
+    >
       <div className="experience--section--header">
         <p className="section--title">{t.experience.label}</p>
         <h1 className="skills-section--heading">{t.experience.heading}</h1>
@@ -16,7 +63,11 @@ export default function Experience() {
       </div>
       <div className="experience--timeline">
         {items.map((item, idx) => (
-          <article key={idx} className="experience--timeline--item">
+          <article
+            key={idx}
+            className="experience--timeline--item"
+            style={{ "--experience-delay": `${idx * 120}ms` }}
+          >
             <div className="experience--timeline--left">
               <span className="experience--timeline--year">{item.year}</span>
             </div>
