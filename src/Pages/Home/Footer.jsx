@@ -6,6 +6,8 @@ function Footer() {
   const { t } = useLang();
   const currentYear = new Date().getFullYear();
   const copyrightText = t.footer.copyright.replace(/\b20\d{2}\b/, String(currentYear));
+  const whatsappLink = "https://wa.me/";
+  const emailLink = "mailto:";
   return (
     <footer className="footer--container">
       <div className="footer--link--container">
@@ -70,6 +72,30 @@ function Footer() {
         </div>
         <div className="footer--social--icon">
           <ul>
+            <li>
+              <a
+                href={whatsappLink}
+                className="navbar--content"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="WhatsApp"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19.05 4.91A9.82 9.82 0 0 0 12.03 2C6.56 2 2.11 6.45 2.11 11.92c0 1.75.46 3.47 1.32 4.98L2 22l5.25-1.38a9.9 9.9 0 0 0 4.77 1.22h.01c5.47 0 9.92-4.45 9.92-9.92a9.86 9.86 0 0 0-2.9-7.01ZM12.03 20.15h-.01a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.12.82.84-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.38c0-4.51 3.67-8.19 8.2-8.19 2.19 0 4.25.85 5.8 2.4a8.14 8.14 0 0 1 2.4 5.79c0 4.52-3.68 8.2-8.18 8.2Zm4.49-6.11c-.25-.12-1.47-.73-1.7-.81-.23-.09-.39-.12-.56.12-.16.24-.64.81-.78.97-.14.16-.29.18-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.22-1.45-1.36-1.69-.14-.24-.02-.37.1-.49.11-.11.25-.29.37-.43.12-.14.16-.24.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.41-.56-.42h-.48c-.17 0-.43.06-.66.31-.23.24-.87.85-.87 2.07 0 1.22.89 2.39 1.01 2.55.12.16 1.75 2.67 4.24 3.74.59.25 1.05.4 1.41.51.59.19 1.12.16 1.54.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href={emailLink}
+                className="navbar--content"
+                aria-label="Email"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 3.24-7.06 4.42a1.8 1.8 0 0 1-1.88 0L4 7.24V6l7.06 4.41a1.8 1.8 0 0 0 1.88 0L20 6v1.24Z"/>
+                </svg>
+              </a>
+            </li>
             <li>
               <a
                 href="https://github.com/"

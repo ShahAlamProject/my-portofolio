@@ -2,8 +2,27 @@ import { useState, useEffect, useRef } from "react";
 import data from "../../data/index.json";
 import { useLang } from "../../LangContext";
 
-function PortfolioModal({ item, onClose }) {
+function resolveLocalizedText(value, lang) {
+  if (!value || typeof value !== "object" || Array.isArray(value)) {
+    return value;
+  }
+
+  const normalizedLang = (lang || "").toLowerCase();
+  const shortLang = normalizedLang.split("-")[0];
+
+  return value[normalizedLang]
+    || value[shortLang]
+    || value.en
+    || value.id
+    || Object.values(value)[0]
+    || "";
+}
+
+function PortfolioModal({ item, onClose, lang }) {
   const { t } = useLang();
+  const title = resolveLocalizedText(item.title, lang);
+  const article = resolveLocalizedText(item.article, lang);
+
   useEffect(() => {
     const onKey = (e) => e.key === "Escape" && onClose();
     document.addEventListener("keydown", onKey);
@@ -26,16 +45,16 @@ function PortfolioModal({ item, onClose }) {
           </svg>
         </button>
         <div className="portfolio-modal__img">
-          <img src={item.src} alt={item.title} />
+          <img src={item.src} alt={title} />
         </div>
         <div className="portfolio-modal__body">
           <p className="sub--title portfolio-modal__label">{t.portfolio.project}</p>
-          <h2 className="portfolio-modal__title">{item.title}</h2>
+          <h2 className="portfolio-modal__title">{title}</h2>
           {item.role && (
             <span className="portfolio-modal__role">{item.role}</span>
           )}
           <div className="portfolio-modal__article">
-            {item.article?.split("\n\n").map((para, i) => (
+            {article?.split("\n\n").map((para, i) => (
               <p key={i}>{para}</p>
             ))}
           </div>
@@ -58,7 +77,7 @@ export default function MyPortfolio() {
   const [activeTech, setActiveTech] = useState("all");
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const filterPanelRef = useRef(null);
-  const { t } = useLang();
+  const { t, lang } = useLang();
   const portfolioItems = data?.portfolio ?? [];
 
   const roleOptions = [
@@ -211,11 +230,23 @@ export default function MyPortfolio() {
               <img src={item.src} alt="Placeholder" />
               <div className="portfolio--section--img--overlay">
                 {item.github && (
-                  <a href={item.github} target="_blank" rel="noopener noreferrer" className="portfolio--overlay--btn" aria-label="GitHub">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                      <path d="M12 .5C5.648.5.5 5.648.5 12c0 5.084 3.292 9.397 7.86 10.918.575.106.785-.25.785-.555 0-.274-.01-1-.015-1.962-3.197.695-3.873-1.54-3.873-1.54-.523-1.328-1.277-1.682-1.277-1.682-1.043-.713.08-.699.08-.699 1.153.08 1.76 1.185 1.76 1.185 1.024 1.755 2.686 1.249 3.34.955.104-.742.401-1.249.729-1.536-2.553-.29-5.238-1.277-5.238-5.685 0-1.256.45-2.283 1.185-3.088-.118-.29-.514-1.458.112-3.04 0 0 .967-.31 3.17 1.18a11.03 11.03 0 0 1 2.885-.388c.98.005 1.967.133 2.886.388 2.2-1.49 3.165-1.18 3.165-1.18.628 1.582.232 2.75.114 3.04.738.805 1.183 1.832 1.183 3.088 0 4.418-2.689 5.392-5.25 5.676.412.354.78 1.05.78 2.116 0 1.527-.014 2.758-.014 3.133 0 .308.207.667.79.554C20.214 21.392 23.5 17.082 23.5 12 23.5 5.648 18.352.5 12 .5Z"/>
-                    </svg>
-                    <span>GitHub</span>
+                  <a
+                    href={item.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="portfolio--overlay--btn"
+                    aria-label={item.githubType === "youtube" ? "YouTube" : "GitHub"}
+                  >
+                    {item.githubType === "youtube" ? (
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M23.498 6.186a2.999 2.999 0 0 0-2.111-2.123C19.536 3.5 12 3.5 12 3.5s-7.536 0-9.387.563A2.999 2.999 0 0 0 .502 6.186C0 8.055 0 12 0 12s0 3.945.502 5.814a2.999 2.999 0 0 0 2.111 2.123C4.464 20.5 12 20.5 12 20.5s7.536 0 9.387-.563a2.999 2.999 0 0 0 2.111-2.123C24 15.945 24 12 24 12s0-3.945-.502-5.814ZM9.75 15.568V8.432L16.125 12 9.75 15.568Z"/>
+                      </svg>
+                    ) : (
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M12 .5C5.648.5.5 5.648.5 12c0 5.084 3.292 9.397 7.86 10.918.575.106.785-.25.785-.555 0-.274-.01-1-.015-1.962-3.197.695-3.873-1.54-3.873-1.54-.523-1.328-1.277-1.682-1.277-1.682-1.043-.713.08-.699.08-.699 1.153.08 1.76 1.185 1.76 1.185 1.024 1.755 2.686 1.249 3.34.955.104-.742.401-1.249.729-1.536-2.553-.29-5.238-1.277-5.238-5.685 0-1.256.45-2.283 1.185-3.088-.118-.29-.514-1.458.112-3.04 0 0 .967-.31 3.17 1.18a11.03 11.03 0 0 1 2.885-.388c.98.005 1.967.133 2.886.388 2.2-1.49 3.165-1.18 3.165-1.18.628 1.582.232 2.75.114 3.04.738.805 1.183 1.832 1.183 3.088 0 4.418-2.689 5.392-5.25 5.676.412.354.78 1.05.78 2.116 0 1.527-.014 2.758-.014 3.133 0 .308.207.667.79.554C20.214 21.392 23.5 17.082 23.5 12 23.5 5.648 18.352.5 12 .5Z"/>
+                      </svg>
+                    )}
+                    <span>{item.githubType === "youtube" ? "YouTube" : "GitHub"}</span>
                   </a>
                 )}
                 {item.website && (
@@ -248,9 +279,9 @@ export default function MyPortfolio() {
                   className="portfolio--section--title portfolio--section--title--clickable"
                   onClick={() => setSelected(item)}
                 >
-                  {item.title}
+                  {resolveLocalizedText(item.title, lang)}
                 </h3>
-                <p className="text-md">{item.description}</p>
+                <p className="text-md">{resolveLocalizedText(item.description, lang)}</p>
                 {item.tech?.length > 0 && (
                   <div className="portfolio--section--tech">
                     {item.tech.slice(0, 4).map((tech) => (
@@ -279,7 +310,7 @@ export default function MyPortfolio() {
       )}
 
       {selected && (
-        <PortfolioModal item={selected} onClose={() => setSelected(null)} />
+        <PortfolioModal item={selected} onClose={() => setSelected(null)} lang={lang} />
       )}
     </section>
   );

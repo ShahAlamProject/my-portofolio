@@ -2,65 +2,303 @@
   "skills": [
     {
       "id": "1",
-      "src": "./img/product-chain-1.png",
-      "title": "Front-End",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "src": "./img/feather-pen-2.png",
+      "title": "Figma",
+      "level": 60,
+      "category": "UI/UX",
+      "description": {
+        "id": "Desain UI/UX, wireframing, dan prototyping untuk produk digital modern.",
+        "en": "UI/UX design, wireframing, and prototyping for modern digital products.",
+        "fr": "Conception UI/UX, wireframing et prototypage pour des produits numeriques modernes.",
+        "es": "Diseno UI/UX, wireframing y prototipado para productos digitales modernos.",
+        "ar": "تصميم UI/UX وإعداد النماذج الأولية والتخطيط الهيكلي للمنتجات الرقمية الحديثة.",
+        "ja": "モダンなデジタル製品向けのUI/UXデザイン、ワイヤーフレーム作成、プロトタイピング。",
+        "zh": "面向现代数字产品的 UI/UX 设计、线框图与原型制作。",
+        "ko": "현대 디지털 제품을 위한 UI/UX 디자인, 와이어프레임, 프로토타이핑.",
+        "ru": "UI/UX-дизайн, вайрфреймы и прототипирование для современных цифровых продуктов."
+      }
     },
     {
       "id": "2",
-      "src": "./img/tag-1.png",
-      "title": "Back-End",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "src": "./img/product-chain-1.png",
+      "title": "HTML",
+      "category": "Front-End",
+      "description": {
+        "id": "Struktur halaman semantik dan markup aksesibel untuk website responsif.",
+        "en": "Semantic page structure and accessible markup for responsive websites.",
+        "fr": "Structure de page semantique et balisage accessible pour des sites web responsives.",
+        "es": "Estructura semantica de pagina y marcado accesible para sitios web responsivos.",
+        "ar": "هيكلة صفحات دلالية ووسوم قابلة للوصول لمواقع ويب متجاوبة.",
+        "ja": "レスポンシブWebサイト向けのセマンティックなページ構造とアクセシブルなマークアップ。",
+        "zh": "用于响应式网站的语义化页面结构与无障碍标记。",
+        "ko": "반응형 웹사이트를 위한 시맨틱한 페이지 구조와 접근 가능한 마크업.",
+        "ru": "Семантическая структура страниц и доступная разметка для адаптивных веб-сайтов."
+      }
     },
     {
       "id": "3",
-      "src": "./img/feather-pen-2.png",
-      "title": "UI & UX Design",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "src": "./img/product-chain-1.png",
+      "title": "CSS",
+      "category": "Front-End",
+      "description": {
+        "id": "Styling modern, sistem layout, dan implementasi desain responsif.",
+        "en": "Modern styling, layout systems, and responsive design implementation.",
+        "fr": "Stylisation moderne, systemes de mise en page et implementation du design responsive.",
+        "es": "Estilos modernos, sistemas de maquetacion e implementacion de diseno responsivo.",
+        "ar": "تنسيقات حديثة وأنظمة تخطيط وتنفيذ تصميم متجاوب.",
+        "ja": "モダンなスタイリング、レイアウトシステム、レスポンシブデザインの実装。",
+        "zh": "现代化样式、布局系统与响应式设计实现。",
+        "ko": "모던 스타일링, 레이아웃 시스템, 반응형 디자인 구현.",
+        "ru": "Современная стилизация, системы раскладки и реализация адаптивного дизайна."
+      }
     },
     {
       "id": "4",
+      "src": "./img/product-chain-1.png",
+      "title": "JavaScript",
+      "category": "Front-End",
+      "description": {
+        "id": "Logika frontend interaktif dan pengembangan perilaku web dinamis.",
+        "en": "Interactive frontend logic and dynamic web behavior development.",
+        "fr": "Logique frontend interactive et developpement de comportements web dynamiques.",
+        "es": "Logica frontend interactiva y desarrollo de comportamiento web dinamico.",
+        "ar": "منطق واجهة أمامية تفاعلي وتطوير سلوك ويب ديناميكي.",
+        "ja": "インタラクティブなフロントエンドロジックと動的なWeb挙動の開発。",
+        "zh": "交互式前端逻辑与动态网页行为开发。",
+        "ko": "인터랙티브 프론트엔드 로직 및 동적 웹 동작 개발.",
+        "ru": "Интерактивная фронтенд-логика и разработка динамичного поведения веб-приложений."
+      }
+    },
+    {
+      "id": "5",
+      "src": "./img/product-chain-1.png",
+      "title": "React JS",
+      "category": "Front-End",
+      "description": {
+        "id": "Pengembangan frontend berbasis komponen untuk aplikasi web yang scalable.",
+        "en": "Component-based frontend development for scalable web applications.",
+        "fr": "Developpement frontend base sur des composants pour des applications web evolutives.",
+        "es": "Desarrollo frontend basado en componentes para aplicaciones web escalables.",
+        "ar": "تطوير واجهات أمامية قائم على المكونات لتطبيقات ويب قابلة للتوسع.",
+        "ja": "スケーラブルなWebアプリ向けのコンポーネントベースのフロントエンド開発。",
+        "zh": "基于组件的前端开发，适用于可扩展的 Web 应用。",
+        "ko": "확장 가능한 웹 애플리케이션을 위한 컴포넌트 기반 프론트엔드 개발.",
+        "ru": "Компонентная фронтенд-разработка для масштабируемых веб-приложений."
+      }
+    },
+    {
+      "id": "6",
+      "src": "./img/product-chain-1.png",
+      "title": "Flutter",
+      "category": "Mobile",
+      "description": {
+        "id": "Pengembangan aplikasi mobile lintas platform dengan UI dan performa yang konsisten.",
+        "en": "Cross-platform mobile app development with consistent UI and performance.",
+        "fr": "Developpement d'applications mobiles multiplateformes avec une UI et des performances coherentes.",
+        "es": "Desarrollo de aplicaciones moviles multiplataforma con UI y rendimiento consistentes.",
+        "ar": "تطوير تطبيقات جوال متعددة المنصات مع واجهة وأداء متسقين.",
+        "ja": "一貫したUIとパフォーマンスを備えたクロスプラットフォームモバイル開発。",
+        "zh": "跨平台移动应用开发，具备一致的界面与性能表现。",
+        "ko": "일관된 UI와 성능을 갖춘 크로스플랫폼 모바일 앱 개발.",
+        "ru": "Кроссплатформенная мобильная разработка с единым UI и стабильной производительностью."
+      }
+    },
+    {
+      "id": "7",
+      "src": "./img/tag-1.png",
+      "title": "MySQL",
+      "category": "Database",
+      "description": {
+        "id": "Perancangan database relasional, pembuatan query, dan manajemen data.",
+        "en": "Relational database design, query building, and data management.",
+        "fr": "Conception de bases de donnees relationnelles, creation de requetes et gestion des donnees.",
+        "es": "Diseno de bases de datos relacionales, construccion de consultas y gestion de datos.",
+        "ar": "تصميم قواعد بيانات علائقية وبناء الاستعلامات وإدارة البيانات.",
+        "ja": "リレーショナルデータベース設計、クエリ作成、データ管理。",
+        "zh": "关系型数据库设计、查询编写与数据管理。",
+        "ko": "관계형 데이터베이스 설계, 쿼리 작성, 데이터 관리.",
+        "ru": "Проектирование реляционных баз данных, написание запросов и управление данными."
+      }
+    },
+    {
+      "id": "8",
+      "src": "./img/tag-1.png",
+      "title": "Node JS",
+      "category": "Back-End",
+      "description": {
+        "id": "Pengembangan API backend dan aplikasi sisi server menggunakan JavaScript.",
+        "en": "Backend API and server-side application development using JavaScript.",
+        "fr": "Developpement d'API backend et d'applications cote serveur avec JavaScript.",
+        "es": "Desarrollo de API backend y aplicaciones del lado del servidor con JavaScript.",
+        "ar": "تطوير واجهات API خلفية وتطبيقات جانب الخادم باستخدام JavaScript.",
+        "ja": "JavaScriptを用いたバックエンドAPIとサーバーサイドアプリケーション開発。",
+        "zh": "使用 JavaScript 进行后端 API 与服务端应用开发。",
+        "ko": "JavaScript를 활용한 백엔드 API 및 서버 사이드 애플리케이션 개발.",
+        "ru": "Разработка backend API и серверных приложений на JavaScript."
+      }
+    },
+    {
+      "id": "9",
+      "src": "./img/tag-1.png",
+      "title": "Laravel",
+      "category": "Back-End",
+      "description": {
+        "id": "Pengembangan dengan framework PHP Laravel menggunakan pola MVC, auth, dan sistem CRUD.",
+        "en": "PHP framework development with MVC pattern, auth, and CRUD systems.",
+        "fr": "Developpement avec le framework PHP Laravel, modele MVC, authentification et systemes CRUD.",
+        "es": "Desarrollo con framework PHP Laravel usando patron MVC, autenticacion y sistemas CRUD.",
+        "ar": "تطوير باستخدام إطار PHP Laravel بنمط MVC والمصادقة وأنظمة CRUD.",
+        "ja": "Laravel（PHPフレームワーク）によるMVC、認証、CRUDシステム開発。",
+        "zh": "基于 Laravel（PHP 框架）的 MVC、认证与 CRUD 系统开发。",
+        "ko": "Laravel(PHP 프레임워크) 기반 MVC, 인증, CRUD 시스템 개발.",
+        "ru": "Разработка на PHP-фреймворке Laravel с использованием MVC, аутентификации и CRUD-систем."
+      }
+    },
+    {
+      "id": "10",
       "src": "./img/feather-pen-1.png",
-      "title": "Webflow Development",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "title": "vMix",
+      "category": "Lain-lain",
+      "description": {
+        "id": "Kontrol produksi live termasuk switching, overlay, dan alur kerja streaming.",
+        "en": "Live production control including switching, overlays, and streaming workflows.",
+        "fr": "Controle de production live incluant switching, overlays et flux de streaming.",
+        "es": "Control de produccion en vivo, incluyendo switching, overlays y flujos de streaming.",
+        "ar": "التحكم في الإنتاج المباشر بما يشمل التبديل والطبقات البصرية وسير عمل البث.",
+        "ja": "スイッチング、オーバーレイ、配信ワークフローを含むライブ制作コントロール。",
+        "zh": "直播制作控制，包括切换、叠加层与推流工作流程。",
+        "ko": "스위칭, 오버레이, 스트리밍 워크플로를 포함한 라이브 제작 제어.",
+        "ru": "Управление live-продакшеном, включая переключение, оверлеи и процессы стриминга."
+      }
     }
   ],
   "portfolio": [
     {
       "id": "1",
       "src": "./img/placeholder-image.png",
-      "title": "Ahuse",
-      "role": "Full Stack Developer",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "title": "Kinabir (Kisah Nabi Ibrahim)",
+      "role": "Front End Developer",
+      "description": {
+        "id": "Aplikasi edukasi kisah Nabi Ibrahim yang dikembangkan sebagai frontend mobile dengan Flutter dan diselesaikan dalam 2 bulan.",
+        "en": "An educational app about the story of Prophet Ibrahim developed as a mobile frontend using Flutter and completed in 2 months.",
+        "fr": "Une application educative sur l'histoire du prophete Ibrahim, developpee en frontend mobile avec Flutter et terminee en 2 mois.",
+        "es": "Una aplicacion educativa sobre la historia del Profeta Ibrahim, desarrollada como frontend movil con Flutter y completada en 2 meses.",
+        "ar": "تطبيق تعليمي عن قصة النبي إبراهيم تم تطويره كواجهة أمامية للجوال باستخدام Flutter وتم إنجازه خلال شهرين.",
+        "ja": "預言者イブラヒムの物語を題材にした教育アプリで、Flutterによるモバイルフロントエンドとして2か月で完成しました。",
+        "zh": "这是一个关于先知易卜拉欣故事的教育应用，使用 Flutter 作为移动端前端开发，并在 2 个月内完成。",
+        "ko": "예언자 이브라힘의 이야기를 다룬 교육용 앱으로, Flutter 기반 모바일 프론트엔드로 2개월 만에 완성했습니다.",
+        "ru": "Это образовательное приложение о истории пророка Ибрахима, разработанное как мобильный фронтенд на Flutter и завершенное за 2 месяца."
+      },
       "link": "View In Github",
-      "article": "Ahuse adalah platform properti modern yang memudahkan pengguna dalam mencari, menyewa, dan membeli hunian secara online. Dibangun dengan React dan Node.js, platform ini menghadirkan pengalaman pencarian yang cepat dan intuitif.\n\nFitur utama meliputi pencarian berbasis lokasi, filter harga dan fasilitas, serta sistem notifikasi real-time. UI/UX dirancang dengan pendekatan mobile-first untuk memastikan aksesibilitas di semua perangkat.",
-      "tech": ["React", "Node.js", "MongoDB", "Tailwind CSS"],
-      "github": "https://github.com/",
-      "website": "https://example.com/"
+      "article": {
+        "id": "Kinabir adalah aplikasi edukasi yang mengangkat kisah Nabi Ibrahim dalam format digital yang mudah dipahami. Fokus pengembangan berada pada sisi antarmuka pengguna agar pengalaman belajar terasa menarik dan interaktif.\n\nAplikasi ini dibangun menggunakan Flutter sebagai frontend, dengan pendekatan desain yang ramah pengguna untuk berbagai ukuran layar perangkat mobile. Proyek ini diselesaikan dalam waktu 2 bulan.",
+        "en": "Kinabir is an educational application that presents the story of Prophet Ibrahim in an accessible digital format. The development focuses on the user interface to make the learning experience engaging and interactive.\n\nThe app is built with Flutter for the frontend, using a user-friendly design approach that adapts to various mobile screen sizes. The project was completed in 2 months.",
+        "fr": "Kinabir est une application educative qui presente l'histoire du prophete Ibrahim dans un format numerique facile a comprendre. Le developpement est axe sur l'interface utilisateur pour rendre l'apprentissage attractif et interactif.\n\nL'application est developpee avec Flutter pour le frontend, avec une approche de design conviviale adaptee a differents ecrans mobiles. Le projet a ete termine en 2 mois.",
+        "es": "Kinabir es una aplicacion educativa que presenta la historia del Profeta Ibrahim en un formato digital facil de entender. El desarrollo se enfoca en la interfaz de usuario para ofrecer una experiencia de aprendizaje atractiva e interactiva.\n\nLa aplicacion fue desarrollada con Flutter para el frontend, con un diseno amigable adaptado a diferentes tamanos de pantalla movil. El proyecto se completo en 2 meses.",
+        "ar": "Kinabir هو تطبيق تعليمي يقدم قصة النبي إبراهيم بصيغة رقمية سهلة الفهم. ركز التطوير على واجهة المستخدم لجعل تجربة التعلم أكثر تفاعلًا وجاذبية.\n\nتم بناء التطبيق باستخدام Flutter في الواجهة الأمامية مع تصميم مناسب لمختلف أحجام شاشات الهواتف. تم إنجاز المشروع خلال شهرين.",
+        "ja": "Kinabirは、預言者イブラヒムの物語を分かりやすいデジタル形式で提供する教育アプリです。学習体験を魅力的でインタラクティブにするため、UIに重点を置いて開発しました。\n\nフロントエンドはFlutterで構築し、さまざまなモバイル画面サイズに対応する使いやすいデザインを採用しています。プロジェクトは2か月で完成しました。",
+        "zh": "Kinabir 是一款以先知易卜拉欣故事为主题的教育应用，以易于理解的数字化形式呈现内容。开发重点放在用户界面上，以提升学习体验的互动性与吸引力。\n\n应用前端使用 Flutter 构建，并采用适配不同移动设备屏幕的友好设计。该项目在 2 个月内完成。",
+        "ko": "Kinabir는 예언자 이브라힘의 이야기를 이해하기 쉬운 디지털 형식으로 제공하는 교육용 애플리케이션입니다. 학습 경험을 더 흥미롭고 상호작용적으로 만들기 위해 UI에 집중해 개발했습니다.\n\n프론트엔드는 Flutter로 구축했으며, 다양한 모바일 화면 크기에 맞는 사용자 친화적 디자인을 적용했습니다. 프로젝트는 2개월 만에 완료되었습니다.",
+        "ru": "Kinabir — это образовательное приложение, которое представляет историю пророка Ибрахима в понятном цифровом формате. Разработка была сосредоточена на пользовательском интерфейсе, чтобы сделать обучение более интересным и интерактивным.\n\nФронтенд приложения создан на Flutter с удобным дизайном, адаптированным под разные размеры мобильных экранов. Проект был завершен за 2 месяца."
+      },
+      "tech": ["Flutter"],
+      "github": "https://github.com/JihadZaidan/Kinabir.git"
     },
     {
       "id": "2",
       "src": "./img/placeholder-image-1.png",
-      "title": "App Dashboard",
-      "role": "Front End Developer",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "title": "Blackcore",
+      "role": "Full Stack Developer",
+      "description": {
+        "id": "Website jual beli khusus untuk produk Blackcore, dibangun dengan Laravel dan database MySQL.",
+        "en": "An e-commerce website dedicated to Blackcore products, built with Laravel and MySQL database.",
+        "fr": "Un site e-commerce dedie aux produits Blackcore, developpe avec Laravel et la base de donnees MySQL.",
+        "es": "Un sitio de comercio electronico dedicado a los productos Blackcore, desarrollado con Laravel y base de datos MySQL.",
+        "ar": "موقع تجارة إلكترونية مخصص لمنتجات Blackcore، تم تطويره باستخدام Laravel وقاعدة بيانات MySQL.",
+        "ja": "Blackcore製品に特化したECサイトで、LaravelとMySQLデータベースで構築しました。",
+        "zh": "一个专注于 Blackcore 产品的电商网站，使用 Laravel 和 MySQL 数据库开发。",
+        "ko": "Blackcore 제품 전용 이커머스 웹사이트로, Laravel과 MySQL 데이터베이스로 개발했습니다.",
+        "ru": "Интернет-магазин, посвященный продукции Blackcore, разработанный на Laravel и базе данных MySQL."
+      },
       "link": "View In Github",
-      "article": "App Dashboard adalah solusi visualisasi data komprehensif untuk kebutuhan bisnis. Dashboard ini menampilkan data analytics secara real-time dengan grafik interaktif dan laporan yang dapat dikustomisasi.\n\nDibangun menggunakan React dan D3.js, aplikasi ini mendukung integrasi dengan berbagai sumber data. Fitur unggulan termasuk dark/light mode, export laporan PDF, dan manajemen pengguna multi-role.",
-      "tech": ["React", "D3.js", "PostgreSQL", "Express"],
+      "article": {
+        "id": "Blackcore adalah website jual beli khusus produk Blackcore yang dirancang untuk memudahkan pelanggan melihat katalog, memilih produk, dan melakukan transaksi secara online.\n\nWebsite ini dibangun menggunakan Laravel dengan database MySQL untuk mengelola data produk, pesanan, pelanggan, dan proses transaksi secara terstruktur.",
+        "en": "Blackcore is an e-commerce website focused on Blackcore products, designed to help customers browse catalogs, choose items, and complete transactions online.\n\nThe website is built with Laravel and MySQL to manage products, orders, customers, and transaction workflows in a structured way.",
+        "fr": "Blackcore est un site e-commerce concentre sur les produits Blackcore, concu pour aider les clients a consulter le catalogue, choisir des articles et effectuer des transactions en ligne.\n\nLe site est developpe avec Laravel et MySQL pour gerer de maniere structuree les produits, commandes, clients et flux de transaction.",
+        "es": "Blackcore es un sitio de comercio electronico enfocado en productos Blackcore, disenado para facilitar a los clientes ver catalogos, elegir productos y realizar transacciones en linea.\n\nEl sitio esta desarrollado con Laravel y MySQL para gestionar de forma estructurada productos, pedidos, clientes y flujo de transacciones.",
+        "ar": "Blackcore هو موقع تجارة إلكترونية يركز على منتجات Blackcore، ومصمم لتسهيل تصفح الكتالوج واختيار المنتجات وإتمام المعاملات عبر الإنترنت.\n\nتم تطوير الموقع باستخدام Laravel وMySQL لإدارة بيانات المنتجات والطلبات والعملاء وسير المعاملات بشكل منظم.",
+        "ja": "Blackcoreは、Blackcore製品に特化したECサイトです。顧客がカタログ閲覧、商品選択、オンライン決済をスムーズに行えるよう設計しています。\n\nサイトはLaravelとMySQLで構築し、商品・注文・顧客・取引フローを構造的に管理しています。",
+        "zh": "Blackcore 是一个专注于 Blackcore 产品的电商网站，旨在帮助客户浏览商品目录、选择商品并完成在线交易。\n\n网站使用 Laravel 与 MySQL 构建，用于结构化管理商品、订单、客户与交易流程。",
+        "ko": "Blackcore는 Blackcore 제품에 특화된 이커머스 웹사이트로, 고객이 카탈로그를 확인하고 상품을 선택해 온라인으로 결제할 수 있도록 설계되었습니다.\n\n웹사이트는 Laravel과 MySQL로 구축되어 상품, 주문, 고객, 거래 흐름을 체계적으로 관리합니다.",
+        "ru": "Blackcore — это e-commerce сайт, ориентированный на продукцию Blackcore. Он создан для того, чтобы клиенты могли просматривать каталог, выбирать товары и совершать онлайн-покупки.\n\nСайт разработан на Laravel и MySQL для структурированного управления товарами, заказами, клиентами и процессами транзакций."
+      },
+      "tech": ["HTML", "CSS", "JavaScript", "Laravel", "MySQL"],
       "github": "https://github.com/",
       "website": "https://example.com/"
     },
     {
       "id": "3",
-      "src": "./img/placeholder-image-2.png",
-      "title": "Easy Rentn",
-      "role": "Cross-Platform Developer",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "src": "./img/placeholder-image.png",
+      "title": "Live Streaming Sekretariat Presiden",
+      "role": "Live Streaming Operator",
+      "description": {
+        "id": "Project PKL live streaming selama 1 tahun menggunakan vMix di akun YouTube Sekretariat Presiden.",
+        "en": "A one-year internship live streaming project using vMix on the YouTube account Sekretariat Presiden.",
+        "fr": "Un projet de stage d'un an en live streaming avec vMix sur le compte YouTube Sekretariat Presiden.",
+        "es": "Un proyecto de practicas de un ano de live streaming con vMix en la cuenta de YouTube Sekretariat Presiden.",
+        "ar": "مشروع تدريب ميداني لمدة سنة في البث المباشر باستخدام vMix على حساب YouTube Sekretariat Presiden.",
+        "ja": "YouTubeアカウントSekretariat Presidenで、vMixを使用して1年間実施したインターンのライブ配信プロジェクトです。",
+        "zh": "这是一个为期一年的实习直播项目，使用 vMix 并在 YouTube 账号 Sekretariat Presiden 上进行。",
+        "ko": "YouTube 계정 Sekretariat Presiden에서 vMix를 사용해 1년 동안 진행한 인턴 라이브 스트리밍 프로젝트입니다.",
+        "ru": "Годовой стажировочный проект по прямым трансляциям с использованием vMix на YouTube-аккаунте Sekretariat Presiden."
+      },
       "link": "View In Github",
-      "article": "Easy Rentn adalah aplikasi manajemen penyewaan kendaraan yang menghubungkan pemilik kendaraan dengan penyewa secara langsung. Sistem pembayaran terintegrasi dan verifikasi identitas digital menjadi keunggulan utama platform ini.\n\nAplikasi dibangun dengan Flutter untuk mobile dan React untuk web. Fitur unggulan mencakup tracking lokasi real-time, sistem rating dua arah, serta notifikasi otomatis untuk pengingat jatuh tempo sewa.",
-      "tech": ["Flutter", "React", "Firebase", "Stripe"],
-      "github": "https://github.com/",
-      "website": "https://example.com/"
+      "article": {
+        "id": "Proyek ini merupakan bagian dari pengalaman PKL saya di bidang live streaming menggunakan vMix yang terhubung ke akun YouTube Sekretariat Presiden. Saya menjalankan peran ini selama kurang lebih satu tahun, dari 2025 hingga 2026.\n\nSelama periode tersebut, saya terlibat langsung dalam siaran kegiatan Presiden, mulai dari persiapan teknis, pengaturan scene, switching kamera, hingga pengelolaan overlay secara real-time. Pengalaman ini juga membuat saya semakin memahami berbagai perangkat live streaming dan alur kerja produksi siaran yang profesional.",
+        "en": "This project was part of my internship experience in live streaming production using vMix, connected to the YouTube account Sekretariat Presiden. I handled this role for around one year, from 2025 to 2026.\n\nDuring that time, I was directly involved in broadcasting presidential activities, including technical setup, scene arrangement, camera switching, and real-time overlay control. This experience strengthened my understanding of multiple live streaming tools and professional broadcast workflows.",
+        "fr": "Ce projet fait partie de mon experience de stage en production de live streaming avec vMix, reliee au compte YouTube Sekretariat Presiden. J'ai occupe ce role pendant environ un an, de 2025 a 2026.\n\nPendant cette periode, j'ai participe directement a la diffusion des activites presidentielles, de la preparation technique a la gestion des scenes, du switching camera et des overlays en temps reel. Cette experience a renforce ma maitrise des outils de live streaming et des workflows de diffusion professionnelle.",
+        "es": "Este proyecto formo parte de mi experiencia de practicas en produccion de live streaming con vMix, conectado a la cuenta de YouTube Sekretariat Presiden. Desarrolle este rol durante aproximadamente un ano, de 2025 a 2026.\n\nDurante ese periodo participe directamente en la transmision de actividades presidenciales, desde la preparacion tecnica y configuracion de escenas hasta el cambio de camaras y control de overlays en tiempo real. Esta experiencia fortalecio mi dominio de herramientas de live streaming y flujos de produccion profesional.",
+        "ar": "كان هذا المشروع جزءًا من تجربة التدريب الميداني الخاصة بي في إنتاج البث المباشر باستخدام vMix، والمربوط بحساب YouTube Sekretariat Presiden. قمت بهذا الدور لمدة تقارب سنة واحدة من 2025 إلى 2026.\n\nخلال هذه الفترة شاركت بشكل مباشر في بث أنشطة الرئيس، بدءًا من التجهيز التقني وإعداد المشاهد وحتى تبديل الكاميرات وإدارة الطبقات البصرية بشكل لحظي. وقد عززت هذه التجربة فهمي لأدوات البث المباشر وسير العمل الاحترافي للإنتاج.",
+        "ja": "このプロジェクトは、YouTubeアカウントSekretariat Presidenに接続したvMixによるライブ配信制作のインターン経験の一部です。私は2025年から2026年まで約1年間この役割を担当しました。\n\nこの期間、技術準備、シーン構成、カメラスイッチング、リアルタイムのオーバーレイ制御まで、大統領関連活動の配信に直接関わりました。この経験を通して、複数のライブ配信機材とプロフェッショナルな制作フローへの理解を深めました。",
+        "zh": "该项目是我在直播制作领域实习经历的一部分，使用 vMix 并连接到 YouTube 账号 Sekretariat Presiden。我在 2025 至 2026 年期间承担该岗位约一年。\n\n在此期间，我直接参与总统相关活动的直播工作，包括技术准备、场景设置、机位切换以及实时叠加层控制。这段经历显著提升了我对多种直播设备和专业制作流程的理解。",
+        "ko": "이 프로젝트는 vMix를 사용해 YouTube 계정 Sekretariat Presiden에 연결하여 진행한 라이브 스트리밍 제작 인턴 경험의 일부입니다. 저는 2025년부터 2026년까지 약 1년간 이 역할을 담당했습니다.\n\n해당 기간 동안 기술 세팅, 씬 구성, 카메라 스위칭, 실시간 오버레이 제어까지 대통령 관련 활동 생중계에 직접 참여했습니다. 이 경험을 통해 다양한 라이브 스트리밍 장비와 전문 방송 워크플로에 대한 이해를 크게 높였습니다.",
+        "ru": "Этот проект был частью моего стажировочного опыта в сфере live streaming с использованием vMix и подключением к YouTube-аккаунту Sekretariat Presiden. Я выполнял эту роль около одного года, с 2025 по 2026.\n\nВ этот период я напрямую участвовал в трансляции мероприятий с участием президента: от технической подготовки и настройки сцен до переключения камер и управления оверлеями в реальном времени. Этот опыт значительно укрепил мои навыки работы с инструментами live streaming и профессиональными производственными процессами."
+      },
+      "tech": ["vMix"],
+      "github": "https://youtube.com/playlist?list=PL9nE5DhmJ69alJd5wAwLiPLkaFI78ifXJ&si=Oo3YBgy1mznmJVhL",
+      "githubType": "youtube"
+    },
+    {
+      "id": "4",
+      "src": "./img/placeholder-image-2.png",
+      "title": "Jagoeng Bakar Nusantara",
+      "role": "Back End Developer",
+      "description": {
+        "id": "Website kasir untuk operasional Jagoeng Bakar Nusantara menggunakan Node.js dan database MySQL.",
+        "en": "A cashier web system for Jagoeng Bakar Nusantara operations using Node.js and MySQL database.",
+        "fr": "Un systeme web de caisse pour les operations de Jagoeng Bakar Nusantara utilisant Node.js et MySQL.",
+        "es": "Un sistema web de caja para las operaciones de Jagoeng Bakar Nusantara utilizando Node.js y MySQL.",
+        "ar": "نظام ويب كاشير لعمليات Jagoeng Bakar Nusantara باستخدام Node.js وقاعدة بيانات MySQL.",
+        "ja": "Jagoeng Bakar Nusantaraの運営向けに、Node.jsとMySQLで構築したレジWebシステムです。",
+        "zh": "这是一个用于 Jagoeng Bakar Nusantara 运营的收银网站系统，使用 Node.js 和 MySQL 数据库。",
+        "ko": "Jagoeng Bakar Nusantara 운영을 위한 웹 기반 포스 시스템으로, Node.js와 MySQL 데이터베이스를 사용합니다.",
+        "ru": "Веб-система кассы для операций Jagoeng Bakar Nusantara, использующая Node.js и базу данных MySQL."
+      },
+      "link": "View In Github",
+      "article": {
+        "id": "Jagoeng Bakar Nusantara adalah website kasir yang digunakan untuk membantu proses penjualan, pencatatan transaksi, dan pengelolaan data operasional.\n\nSistem ini dibangun menggunakan Node.js dengan database MySQL agar pengelolaan data menu, pembayaran, dan laporan kasir berjalan cepat dan terstruktur.",
+        "en": "Jagoeng Bakar Nusantara is a cashier website used to support sales transactions, recordkeeping, and operational data management.\n\nThe system is built with Node.js and MySQL so menu data, payments, and cashier reports can be managed quickly and in a structured manner.",
+        "fr": "Jagoeng Bakar Nusantara est un site web de caisse utilise pour soutenir les transactions de vente, l'enregistrement et la gestion des donnees operationnelles.\n\nLe systeme est developpe avec Node.js et MySQL afin de gerer rapidement et de facon structuree les donnees de menu, paiements et rapports de caisse.",
+        "es": "Jagoeng Bakar Nusantara es un sitio web de caja utilizado para apoyar transacciones de venta, registro y gestion de datos operativos.\n\nEl sistema esta desarrollado con Node.js y MySQL para gestionar de forma rapida y estructurada los datos de menu, pagos e informes de caja.",
+        "ar": "Jagoeng Bakar Nusantara هو موقع ويب كاشير يُستخدم لدعم عمليات البيع وتسجيل المعاملات وإدارة البيانات التشغيلية.\n\nتم تطوير النظام باستخدام Node.js وMySQL لإدارة بيانات القوائم والمدفوعات وتقارير الكاشير بسرعة وبشكل منظم.",
+        "ja": "Jagoeng Bakar Nusantaraは、販売処理、取引記録、運用データ管理を支援するレジ用Webサイトです。\n\nシステムはNode.jsとMySQLで構築され、メニュー情報、支払い、レジレポートを迅速かつ構造的に管理できます。",
+        "zh": "Jagoeng Bakar Nusantara 是一个收银网站，用于支持销售流程、交易记录与运营数据管理。\n\n系统采用 Node.js 与 MySQL 构建，以便快速且结构化地管理菜单数据、支付信息和收银报表。",
+        "ko": "Jagoeng Bakar Nusantara는 판매 처리, 거래 기록, 운영 데이터 관리를 지원하는 웹 기반 카셔 시스템입니다.\n\n시스템은 Node.js와 MySQL로 구축되어 메뉴 데이터, 결제, 카셔 리포트를 빠르고 체계적으로 관리할 수 있습니다.",
+        "ru": "Jagoeng Bakar Nusantara — это веб-сайт кассы, используемый для поддержки продаж, учета транзакций и управления операционными данными.\n\nСистема разработана на Node.js и MySQL, что позволяет быстро и структурированно управлять меню, платежами и кассовыми отчетами."
+      },
+      "tech": ["Node.js", "MySQL"],
+      "github": "https://github.com/ShahAlamProject/jagoeng-bakar-nusantara-backend.git",
+      "website": "https://jagungbakar.codepackergrf.com"
     }
   ],
   "testimonial": [

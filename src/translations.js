@@ -10,7 +10,7 @@ const translations = {
       testimonials: "Testimonials",
     },
     hero: {
-      greeting: "Hey, I'm Muhammad Jihad Zaidan Al Shareef-Syah",
+      greeting: "Hey, I'm Jihad Zaidan",
       buildAs: "I build as a",
       description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, quas. Amet soluta assumenda cum?",
       cta: "Get In Touch",
@@ -20,6 +20,15 @@ const translations = {
     skills: {
       label: "My Skills",
       heading: "My Expertise",
+      categoryFilter: "Category",
+      categoryOptions: {
+        "UI/UX": "UI/UX",
+        "Front-End": "Front-End",
+        "Back-End": "Back-End",
+        Mobile: "Mobile",
+        Database: "Database",
+        "Lain-lain": "Others",
+      },
     },
     about: {
       label: "About",
@@ -89,6 +98,15 @@ const translations = {
     skills: {
       label: "Keahlian Saya",
       heading: "Bidang Keahlian",
+      categoryFilter: "Kategori",
+      categoryOptions: {
+        "UI/UX": "UI/UX",
+        "Front-End": "Front-End",
+        "Back-End": "Back-End",
+        Mobile: "Mobile",
+        Database: "Database",
+        "Lain-lain": "Lain-lain",
+      },
     },
     about: {
       label: "Tentang",
@@ -158,6 +176,15 @@ const translations = {
     skills: {
       label: "Mes Competences",
       heading: "Mon Expertise",
+      categoryFilter: "Categorie",
+      categoryOptions: {
+        "UI/UX": "UI/UX",
+        "Front-End": "Front-End",
+        "Back-End": "Back-End",
+        Mobile: "Mobile",
+        Database: "Base de donnees",
+        "Lain-lain": "Autres",
+      },
     },
     about: {
       label: "A propos",
@@ -227,6 +254,15 @@ const translations = {
     skills: {
       label: "Mis Habilidades",
       heading: "Mi Experiencia",
+      categoryFilter: "Categoria",
+      categoryOptions: {
+        "UI/UX": "UI/UX",
+        "Front-End": "Front-End",
+        "Back-End": "Back-End",
+        Mobile: "Movil",
+        Database: "Base de datos",
+        "Lain-lain": "Otros",
+      },
     },
     about: {
       label: "Sobre Mi",
@@ -297,6 +333,15 @@ const translations = {
     skills: {
       label: "مهاراتي",
       heading: "خبراتي",
+      categoryFilter: "الفئة",
+      categoryOptions: {
+        "UI/UX": "واجهة وتجربة المستخدم",
+        "Front-End": "الواجهة الامامية",
+        "Back-End": "الواجهة الخلفية",
+        Mobile: "تطبيقات الجوال",
+        Database: "قواعد البيانات",
+        "Lain-lain": "اخرى",
+      },
     },
     about: {
       label: "نبذة",
@@ -366,6 +411,15 @@ const translations = {
     skills: {
       label: "スキル",
       heading: "得意分野",
+      categoryFilter: "カテゴリ",
+      categoryOptions: {
+        "UI/UX": "UI/UX",
+        "Front-End": "フロントエンド",
+        "Back-End": "バックエンド",
+        Mobile: "モバイル",
+        Database: "データベース",
+        "Lain-lain": "その他",
+      },
     },
     about: {
       label: "自己紹介",
@@ -435,6 +489,15 @@ const translations = {
     skills: {
       label: "我的技能",
       heading: "专业领域",
+      categoryFilter: "分类",
+      categoryOptions: {
+        "UI/UX": "UI/UX",
+        "Front-End": "前端",
+        "Back-End": "后端",
+        Mobile: "移动端",
+        Database: "数据库",
+        "Lain-lain": "其他",
+      },
     },
     about: {
       label: "关于",
@@ -504,6 +567,15 @@ const translations = {
     skills: {
       label: "나의 기술",
       heading: "전문 분야",
+      categoryFilter: "카테고리",
+      categoryOptions: {
+        "UI/UX": "UI/UX",
+        "Front-End": "프론트엔드",
+        "Back-End": "백엔드",
+        Mobile: "모바일",
+        Database: "데이터베이스",
+        "Lain-lain": "기타",
+      },
     },
     about: {
       label: "소개",
@@ -573,6 +645,15 @@ const translations = {
     skills: {
       label: "Мои навыки",
       heading: "Моя экспертиза",
+      categoryFilter: "Категория",
+      categoryOptions: {
+        "UI/UX": "UI/UX",
+        "Front-End": "Фронтенд",
+        "Back-End": "Бэкенд",
+        Mobile: "Мобильная разработка",
+        Database: "База данных",
+        "Lain-lain": "Другое",
+      },
     },
     about: {
       label: "Обо мне",
