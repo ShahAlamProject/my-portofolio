@@ -21,52 +21,19 @@
     {
       "id": "2",
       "src": "./img/product-chain-1.png",
-      "title": "HTML",
+      "title": "HTML, CSS, JavaScript",
+      "level": 65,
       "category": "Front-End",
       "description": {
-        "id": "Struktur halaman semantik dan markup aksesibel untuk website responsif.",
-        "en": "Semantic page structure and accessible markup for responsive websites.",
-        "fr": "Structure de page semantique et balisage accessible pour des sites web responsives.",
-        "es": "Estructura semantica de pagina y marcado accesible para sitios web responsivos.",
-        "ar": "هيكلة صفحات دلالية ووسوم قابلة للوصول لمواقع ويب متجاوبة.",
-        "ja": "レスポンシブWebサイト向けのセマンティックなページ構造とアクセシブルなマークアップ。",
-        "zh": "用于响应式网站的语义化页面结构与无障碍标记。",
-        "ko": "반응형 웹사이트를 위한 시맨틱한 페이지 구조와 접근 가능한 마크업.",
-        "ru": "Семантическая структура страниц и доступная разметка для адаптивных веб-сайтов."
-      }
-    },
-    {
-      "id": "3",
-      "src": "./img/product-chain-1.png",
-      "title": "CSS",
-      "category": "Front-End",
-      "description": {
-        "id": "Styling modern, sistem layout, dan implementasi desain responsif.",
-        "en": "Modern styling, layout systems, and responsive design implementation.",
-        "fr": "Stylisation moderne, systemes de mise en page et implementation du design responsive.",
-        "es": "Estilos modernos, sistemas de maquetacion e implementacion de diseno responsivo.",
-        "ar": "تنسيقات حديثة وأنظمة تخطيط وتنفيذ تصميم متجاوب.",
-        "ja": "モダンなスタイリング、レイアウトシステム、レスポンシブデザインの実装。",
-        "zh": "现代化样式、布局系统与响应式设计实现。",
-        "ko": "모던 스타일링, 레이아웃 시스템, 반응형 디자인 구현.",
-        "ru": "Современная стилизация, системы раскладки и реализация адаптивного дизайна."
-      }
-    },
-    {
-      "id": "4",
-      "src": "./img/product-chain-1.png",
-      "title": "JavaScript",
-      "category": "Front-End",
-      "description": {
-        "id": "Logika frontend interaktif dan pengembangan perilaku web dinamis.",
-        "en": "Interactive frontend logic and dynamic web behavior development.",
-        "fr": "Logique frontend interactive et developpement de comportements web dynamiques.",
-        "es": "Logica frontend interactiva y desarrollo de comportamiento web dinamico.",
-        "ar": "منطق واجهة أمامية تفاعلي وتطوير سلوك ويب ديناميكي.",
-        "ja": "インタラクティブなフロントエンドロジックと動的なWeb挙動の開発。",
-        "zh": "交互式前端逻辑与动态网页行为开发。",
-        "ko": "인터랙티브 프론트엔드 로직 및 동적 웹 동작 개발.",
-        "ru": "Интерактивная фронтенд-логика и разработка динамичного поведения веб-приложений."
+        "id": "Fondasi frontend meliputi struktur semantik HTML, styling responsif CSS, dan logika interaktif JavaScript.",
+        "en": "Frontend foundations including semantic HTML structure, responsive CSS styling, and interactive JavaScript logic.",
+        "fr": "Fondations frontend incluant structure HTML semantique, style CSS responsive et logique JavaScript interactive.",
+        "es": "Fundamentos frontend que incluyen estructura semantica HTML, estilos CSS responsivos y logica interactiva con JavaScript.",
+        "ar": "أساسيات الواجهة الأمامية وتشمل بنية HTML دلالية، تنسيقات CSS متجاوبة، ومنطق JavaScript تفاعلي.",
+        "ja": "HTMLのセマンティック構造、CSSのレスポンシブスタイリング、JavaScriptのインタラクティブなロジックを含むフロントエンド基礎。",
+        "zh": "前端基础能力，包括 HTML 语义结构、CSS 响应式样式与 JavaScript 交互逻辑。",
+        "ko": "시맨틱 HTML 구조, 반응형 CSS 스타일링, 인터랙티브 JavaScript 로직을 포함한 프론트엔드 기초 역량.",
+        "ru": "Базовые frontend-навыки: семантическая структура HTML, адаптивная стилизация CSS и интерактивная логика JavaScript."
       }
     },
     {

@@ -9,7 +9,7 @@ function Footer() {
   const whatsappLink = "https://wa.me/";
   const emailLink = "mailto:";
   return (
-    <footer className="footer--container">
+    <footer id="Footer" className="footer--container">
       <div className="footer--link--container">
         <div>
           <img src="./img/logo.svg" alt="Logoipsum" />
@@ -18,7 +18,7 @@ function Footer() {
           <ul>
             <li>
               <Link
-                activeClass="navbar--active-content"
+                activeClass="footer--active-content"
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -31,20 +31,20 @@ function Footer() {
             </li>
             <li>
               <Link
-                activeClass="navbar--active-content"
+                activeClass="footer--active-content"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
-                to="MyPortfolio"
+                to="mySkills"
                 className="text-md"
               >
-                {t.nav.portfolio}
+                {t.skills.label}
               </Link>
             </li>
             <li>
               <Link
-                activeClass="navbar--active-content"
+                activeClass="footer--active-content"
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -57,7 +57,7 @@ function Footer() {
             </li>
             <li>
               <Link
-                activeClass="navbar--active-content"
+                activeClass="footer--active-content"
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -68,9 +68,23 @@ function Footer() {
                 {t.experience.label}
               </Link>
             </li>
+            <li>
+              <Link
+                activeClass="footer--active-content"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                to="MyPortfolio"
+                className="text-md"
+              >
+                {t.nav.portfolio}
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="footer--social--icon">
+          <p className="footer--social-title">My Contact</p>
           <ul>
             <li>
               <a
@@ -166,7 +180,7 @@ function Footer() {
           <ul>
             <li>
               <Link
-                activeClass="navbar--active-content"
+                activeClass="footer--active-content"
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -179,7 +193,7 @@ function Footer() {
             </li>
             <li>
               <Link
-                activeClass="navbar--active-content"
+                activeClass="footer--active-content"
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -192,7 +206,7 @@ function Footer() {
             </li>
             <li>
               <Link
-                activeClass="navbar--active-content"
+                activeClass="footer--active-content"
                 spy={true}
                 smooth={true}
                 offset={-70}

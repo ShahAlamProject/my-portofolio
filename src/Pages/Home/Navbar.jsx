@@ -36,7 +36,9 @@ function Navbar({ isDark, toggleTheme }) {
 
   const navItems = [
     { to: "heroSection", label: t.nav.home },
+    { to: "mySkills", label: t.skills.label },
     { to: "AboutMe", label: t.nav.about },
+    { to: "Experience", label: t.experience.label },
     { to: "MyPortfolio", label: t.nav.portfolio },
   ];
 

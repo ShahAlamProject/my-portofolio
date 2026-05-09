@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-scroll";
 import { useLang } from "../../LangContext";
 
 export default function HeroSection() {
@@ -66,7 +67,15 @@ export default function HeroSection() {
           </p>
         </div>
         <div className="hero--actions">
-          <button className="btn hero--liquid-btn hero--liquid-btn-primary">{t.hero.cta}</button>
+          <Link
+            to="Footer"
+            smooth={true}
+            offset={-20}
+            duration={500}
+            className="btn hero--liquid-btn hero--liquid-btn-primary"
+          >
+            {t.hero.cta}
+          </Link>
           <a
             className="btn hero--liquid-btn hero--liquid-btn-secondary hero--cv-btn"
             href={cvFilePath}
