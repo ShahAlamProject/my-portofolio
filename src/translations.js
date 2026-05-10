@@ -10,7 +10,7 @@ const translations = {
       testimonials: "Testimonials",
     },
     hero: {
-      greeting: "Hey, I'm Jihad Zaidan",
+      greeting: "Hi, I'm Jihad Zaidan",
       buildAs: "I build as a",
       description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, quas. Amet soluta assumenda cum?",
       cta: "Get In Touch",
@@ -88,7 +88,7 @@ const translations = {
       testimonials: "Testimoni",
     },
     hero: {
-      greeting: "Hai, Saya Muhammad Jihad Zaidan",
+      greeting: "Hai, Saya Jihad Zaidan",
       buildAs: "Saya membangun sebagai",
       description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, quas. Amet soluta assumenda cum?",
       cta: "Hubungi Saya",
@@ -166,7 +166,7 @@ const translations = {
       testimonials: "Temoignages",
     },
     hero: {
-      greeting: "Salut, je suis Muhammad Jihad Zaidan",
+      greeting: "Salut, je suis Jihad Zaidan",
       buildAs: "Je developpe en tant que",
       description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, quas. Amet soluta assumenda cum?",
       cta: "Me Contacter",
@@ -244,7 +244,7 @@ const translations = {
       testimonials: "Testimonios",
     },
     hero: {
-      greeting: "Hola, soy Muhammad Jihad Zaidan",
+      greeting: "Hola, soy Jihad Zaidan",
       buildAs: "Desarrollo como",
       description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, quas. Amet soluta assumenda cum?",
       cta: "Contactame",
@@ -323,7 +323,7 @@ const translations = {
       testimonials: "التوصيات",
     },
     hero: {
-      greeting: "مرحباً، أنا محمد جهاد زيدان",
+      greeting: "مرحباً، أنا جهاد زيدان",
       buildAs: "أعمل كـ",
       description: "لوريم إيبسوم دولور سيت أميت، كونسيكتيتور أديبيسينج إليت.",
       cta: "تواصل معي",
@@ -401,7 +401,7 @@ const translations = {
       testimonials: "お客様の声",
     },
     hero: {
-      greeting: "こんにちは、Muhammad Jihad Zaidanです",
+      greeting: "こんにちは、ジハド・ザイダンです",
       buildAs: "私は次として開発します",
       description: "ロレム・イプサム・ドロル・シット・アメット、コンセクテトゥル・アジピシング・エリット。",
       cta: "お問い合わせ",
@@ -479,7 +479,7 @@ const translations = {
       testimonials: "客户评价",
     },
     hero: {
-      greeting: "你好，我是Muhammad Jihad Zaidan",
+      greeting: "你好，我是Jihad Zaidan",
       buildAs: "我从事",
       description: "Lorem ipsum dolor sit amet，consectetur adipiscing elit。",
       cta: "联系我",
@@ -557,7 +557,7 @@ const translations = {
       testimonials: "추천사",
     },
     hero: {
-      greeting: "안녕하세요, 저는 Muhammad Jihad Zaidan입니다",
+      greeting: "안녕하세요, 저는 Jihad Zaidan입니다",
       buildAs: "저는 다음으로 개발합니다",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       cta: "연락하기",
@@ -635,7 +635,7 @@ const translations = {
       testimonials: "Отзывы",
     },
     hero: {
-      greeting: "Привет, я Muhammad Jihad Zaidan",
+      greeting: "Привет, я Jihad Zaidan",
       buildAs: "Я разрабатываю как",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       cta: "Связаться",
