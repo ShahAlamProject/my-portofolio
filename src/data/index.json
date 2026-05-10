@@ -37,6 +37,24 @@
       }
     },
     {
+      "id": "3",
+      "src": "./img/product-chain-1.png",
+      "title": "PHP",
+      "level": 55,
+      "category": "Back-End",
+      "description": {
+        "id": "Pengembangan backend dengan PHP, pembuatan API, dan sistem database management.",
+        "en": "Backend development with PHP, API creation, and database management systems.",
+        "fr": "Developpement backend avec PHP, creation d'API et systemes de gestion de base de donnees.",
+        "es": "Desarrollo backend con PHP, creacion de API y sistemas de gestion de bases de datos.",
+        "ar": "تطوير الواجهة الخلفية باستخدام PHP وإنشاء واجهات برمجية وأنظمة إدارة قواعد البيانات.",
+        "ja": "PHPを使用したバックエンド開発、API作成、データベース管理システム。",
+        "zh": "使用 PHP 进行后端开发、API 创建与数据库管理系统。",
+        "ko": "PHP를 활용한 백엔드 개발, API 작성, 데이터베이스 관리 시스템.",
+        "ru": "Backend-разработка на PHP, создание API и системы управления базами данных."
+      }
+    },
+    {
       "id": "5",
       "src": "./img/product-chain-1.png",
       "title": "React JS",
