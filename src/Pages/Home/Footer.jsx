@@ -2,17 +2,18 @@ import { Link } from "react-scroll";
 import React from "react";
 import { useLang } from "../../LangContext";
 
-function Footer() {
+function Footer({ isDark }) {
   const { t } = useLang();
   const currentYear = new Date().getFullYear();
   const copyrightText = t.footer.copyright.replace(/\b20\d{2}\b/, String(currentYear));
   const whatsappLink = "https://wa.me/";
   const emailLink = "mailto:";
+  const logoSrc = isDark ? "./logodarkmode.png" : "./logolightmode.png";
   return (
     <footer id="Footer" className="footer--container">
       <div className="footer--link--container">
         <div>
-          <img src="./img/logo.svg" alt="Logoipsum" />
+          <img src={logoSrc} alt="Logo" className="footer--logo" />
         </div>
         <div className="footer--items">
           <ul>

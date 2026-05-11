@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import "./Navbar.css";
 import { Link } from "react-scroll";
 import { useLang } from "../../LangContext";
 
@@ -41,6 +42,8 @@ function Navbar({ isDark, toggleTheme }) {
     { to: "Experience", label: t.experience.label },
     { to: "MyPortfolio", label: t.nav.portfolio },
   ];
+
+  const logoSrc = isDark ? "./logodarkmode.png" : "./logolightmode.png";
 
   const toggleNav = () => {
     setNavActive((prevNavActive) => !prevNavActive);
@@ -88,11 +91,7 @@ function Navbar({ isDark, toggleTheme }) {
       <div className="navbar__shimmer" aria-hidden="true" />
       <div className="navbar__brand">
         <div className="navbar__logo-shell">
-          <img src="./img/logo.svg" alt="Logoipsum" />
-        </div>
-        <div className="navbar__brand-copy">
-          <span className="navbar__eyebrow">Creative Developer</span>
-          <span className="navbar__title">Portfolio</span>
+          <img src={logoSrc} alt="Logo" />
         </div>
       </div>
       <div className={`navbar--items ${navActive ? "active" : ""}`}>

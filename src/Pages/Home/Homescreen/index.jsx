@@ -5,7 +5,7 @@ import HeroSection from "../HeroSection";
 import MyPortfolio from "../MyPortfolio";
 import MySkills from "../MySkills";
 
-export default function Home() {
+export default function Home({ isDark }) {
   return (
     <>
       <HeroSection />
@@ -13,7 +13,7 @@ export default function Home() {
       <AboutMe />
       <Experience />
       <MyPortfolio />
-      <Footer />
+      <Footer isDark={isDark} />
     </>
   );
 }
