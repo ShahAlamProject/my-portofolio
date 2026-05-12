@@ -1,3 +1,30 @@
+@media (max-width: 600px) {
+  /* Bahasa selain Arab (LTR): logo kecil & kiri */
+  html[dir='ltr'] .navbar__logo-shell img {
+    height: 32px !important;
+    max-width: 40px !important;
+    margin-left: 16px !important;
+    margin-right: 0 !important;
+    display: block;
+  }
+  html[dir='ltr'] .navbar__logo-shell {
+    justify-content: flex-start !important;
+    margin-left: 8px !important;
+  }
+
+  /* Bahasa Arab (RTL): logo kecil & kanan */
+  html[dir='rtl'] .navbar__logo-shell img {
+    height: 32px !important;
+    max-width: 40px !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    display: block;
+  }
+  html[dir='rtl'] .navbar__logo-shell {
+    justify-content: flex-end !important;
+    margin-right: 0 !important;
+  }
+}
 /* Perbesar padding navbar agar tidak mepet */
 .navbar {
   padding-top: 18px;

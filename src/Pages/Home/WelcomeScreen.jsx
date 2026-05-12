@@ -17,8 +17,8 @@ const greetings = [
   { text: "Добро пожаловать", lang: "ru" },
 ];
 
-const DISPLAY_MS = 700;
-const TRANSITION_MS = 200;
+const DISPLAY_MS = 900;
+const TRANSITION_MS = 250;
 
 export default function WelcomeScreen({ onDone }) {
   const { lang } = useLang();
@@ -32,18 +32,21 @@ export default function WelcomeScreen({ onDone }) {
     ...greetings.filter(g => g.lang === lang),
     ...greetings.filter(g => g.lang !== lang)
   ];
-  const greeting = orderedGreetings[index] || orderedGreetings[orderedGreetings.length - 1];
-  const isRtl = greeting.lang === "ar";
+  // Fallback: jika tidak ada greeting sama sekali, pakai default
+  const fallbackGreeting = { text: "Welcome", lang: "en" };
+  const greeting = (orderedGreetings[index] || orderedGreetings[0]) || fallbackGreeting;
+  const isRtl = greeting && greeting.lang === "ar";
 
   useEffect(() => {
     // Trigger animasi masuk pertama kali
     setEntered(true);
+    setVisible(true);
   }, []);
+
 
   useEffect(() => {
     if (index >= orderedGreetings.length) {
       setLeaving(true);
-      setTimeout(onDone, 350);
       return;
     }
     let fadeOut;
@@ -52,13 +55,21 @@ export default function WelcomeScreen({ onDone }) {
       fadeOut = setTimeout(() => {
         setIndex(i => i + 1);
         setVisible(true);
-      }, 350);
+      }, TRANSITION_MS);
     }, DISPLAY_MS);
     return () => {
       clearTimeout(showTimer);
       clearTimeout(fadeOut);
     };
-  }, [index, orderedGreetings.length, onDone]);
+  }, [index, orderedGreetings.length]);
+
+  // Panggil onDone hanya saat leaving berubah true
+  useEffect(() => {
+    if (leaving && typeof onDone === 'function') {
+      const timeout = setTimeout(onDone, 150);
+      return () => clearTimeout(timeout);
+    }
+  }, [leaving, onDone]);
 
   if (leaving) return null;
 
@@ -78,16 +89,18 @@ export default function WelcomeScreen({ onDone }) {
     >
       <span
         style={{
-          fontSize: "4rem",
+          fontSize: 'min(8vw, 3rem)',
           fontWeight: 700,
-          minWidth: 220,
-          textAlign: "center",
-          display: "inline-block",
+          minWidth: 120,
+          maxWidth: '90vw',
+          textAlign: 'center',
+          display: 'inline-block',
+          wordBreak: 'break-word',
+          whiteSpace: 'pre-line',
           opacity: visible ? 1 : 0,
-          transform: entered && visible ? "scale(1)" : "scale(0.7)",
-          transition: "opacity 0.7s cubic-bezier(0.4,0,0.2,1), transform 0.7s cubic-bezier(0.4,0,0.2,1)"
+          transition: `opacity ${TRANSITION_MS}ms cubic-bezier(0.4,0,0.2,1)`
         }}
-        dir={isRtl ? "rtl" : "ltr"}
+        dir={isRtl ? 'rtl' : 'ltr'}
       >
         {greeting.text}
       </span>

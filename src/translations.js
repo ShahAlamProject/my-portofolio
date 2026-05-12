@@ -74,6 +74,7 @@ const translations = {
     },
     footer: {
       copyright: "© 2024 Muhammad Jihad Zaidan. All Rights Reserved.",
+      contactLabel: "My Contact & Media Social",
     },
   },
 
@@ -152,6 +153,7 @@ const translations = {
     },
     footer: {
       copyright: "© 2024 Muhammad Jihad Zaidan. Hak Cipta Dilindungi.",
+      contactLabel: "Kontak & Media Sosial Saya",
     },
   },
 
@@ -230,6 +232,7 @@ const translations = {
     },
     footer: {
       copyright: "© 2024 Muhammad Jihad Zaidan. Tous droits reserves.",
+      contactLabel: "Mon Contact & Réseaux Sociaux",
     },
   },
 
@@ -308,6 +311,7 @@ const translations = {
     },
     footer: {
       copyright: "© 2024 Muhammad Jihad Zaidan. Todos los derechos reservados.",
+      contactLabel: "Mi Contacto & Redes Sociales",
     },
   },
 
@@ -387,6 +391,7 @@ const translations = {
     },
     footer: {
       copyright: "© 2024 Muhammad Jihad Zaidan. جميع الحقوق محفوظة.",
+      contactLabel: "اتصالي و وسائل التواصل الاجتماعي",
     },
   },
 
@@ -465,6 +470,7 @@ const translations = {
     },
     footer: {
       copyright: "© 2024 Muhammad Jihad Zaidan. All Rights Reserved.",
+      contactLabel: "私の連絡先とソーシャルメディア",
     },
   },
 
@@ -543,6 +549,7 @@ const translations = {
     },
     footer: {
       copyright: "© 2024 Muhammad Jihad Zaidan. 版权所有。",
+      contactLabel: "我的联系方式和社交媒体",
     },
   },
 
@@ -621,6 +628,7 @@ const translations = {
     },
     footer: {
       copyright: "© 2024 Muhammad Jihad Zaidan. All Rights Reserved.",
+      contactLabel: "내 연락처 및 소셜 미디어",
     },
   },
 
@@ -699,6 +707,7 @@ const translations = {
     },
     footer: {
       copyright: "© 2024 Muhammad Jihad Zaidan. Все права защищены.",
+      contactLabel: "Мои контакты и социальные сети",
     },
   },
 };
