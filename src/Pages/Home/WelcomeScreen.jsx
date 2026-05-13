@@ -17,8 +17,8 @@ const greetings = [
   { text: "Добро пожаловать", lang: "ru" },
 ];
 
-const DISPLAY_MS = 900;
-const TRANSITION_MS = 250;
+const DISPLAY_MS = 600;
+const TRANSITION_MS = 160;
 
 export default function WelcomeScreen({ onDone }) {
   const { lang } = useLang();

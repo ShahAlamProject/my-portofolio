@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useLang } from "../../LangContext";
 
 export default function Experience() {
-  const { t } = useLang();
+  const { t, lang } = useLang();
   const sectionRef = useRef(null);
   const [isInView, setIsInView] = useState(false);
   const items = t.experience.items || [];
@@ -50,7 +50,7 @@ export default function Experience() {
   return (
     <section
       id="Experience"
-      className={`experience--section ${isInView ? "is-inview" : ""}`}
+      className={`experience--section${lang === "ar" ? " rtl" : ""}${isInView ? " is-inview" : ""}`}
       ref={sectionRef}
     >
       <div className="experience--section--header">
